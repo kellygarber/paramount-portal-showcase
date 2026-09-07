@@ -101,4 +101,4 @@ The sign-in screen establishes the intended entry experience. Authentication is 
 | Records in Reach | **Under construction** — board concept visible; live opportunity calculations are not implemented in this preview. |
 | External launchers and PR Bell submission | **Placeholder / concept** — reviewed destinations and authorized persistence remain future work. |
 
-This private showcase is a design and architecture review, with no application deployment or live service access.
+This showcase is a design and architecture review, with no application deployment or live service access.
