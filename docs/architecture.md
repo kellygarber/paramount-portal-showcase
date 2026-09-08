@@ -24,6 +24,6 @@ Together, these roles connect data maintenance to the athlete experience while k
 
 ## What coaches can assess today
 
-The synthetic preview makes the information layout, navigation, athlete profile, and four Team board concepts reviewable. **Records in Reach remains under construction**: its intended comparison of athlete performance with applicable records and standards is not a live calculation in the preview.
+The preview makes the information layout, navigation, athlete profile, Team boards, and the built Records In Reach presentation reviewable. Records In Reach separates verified Holds Record and athlete-facing In Reach results from coach-only selected Near and cautious Needs Data / Review states. Its displayed values remain controlled review/demo fixtures; live Airtable/API integration is not connected.
 
 Live authentication, permission-scoped data access, working external handoffs, and PR Bell persistence are next-phase work. No deployment, real athlete data, or operational credentials are included in this showcase.

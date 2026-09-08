@@ -4,7 +4,7 @@
 
 A mobile-first athlete and team platform for Paramount Barbell Club, designed to combine the athlete experience, coaching information, competition history, records, qualifications, training PRs, membership context, and team analytics in one interface.
 
-**Foundation preview:** the PWA shell, design, and navigation are built. Every athlete name, performance value, and team entry shown below is synthetic. Live data and authentication are the next phase.
+**Design review:** the PWA shell, design, navigation, and Records In Reach presentation are built. Values shown below are controlled review/demo fixtures. Live Airtable/API integration and authentication are not connected.
 
 ## The mobile experience
 
@@ -39,13 +39,31 @@ Four boards give the team its own space:
 | **Current Records** | A synthetic preview of club record holders. |
 | **Perfect 6/6** | A sample board recognizing perfect meets. |
 | **Bomb Squad** | A reserved board for a team tradition; its final rules and live membership are not represented here. |
-| **Records in Reach — UNDER CONSTRUCTION** | Intended to identify realistic record opportunities by comparing athlete performance against applicable record standards and records. The visible rows are placeholders, not computed opportunities. |
+| **Records In Reach** | A built presentation for verified holder evidence, athlete-facing opportunities, selected coach-only Near results, and cautious Needs Data / Review states. Values remain review/demo fixtures. |
 
 | Team · all four boards | Profile · the athlete snapshot |
 | :---: | :---: |
 | <img src="assets/team-mobile.png" width="300" alt="Synthetic Team screen showing Current Records, Perfect 6/6, Bomb Squad, and Records in Reach"> | <img src="assets/profile-mobile.png" width="300" alt="Demo athlete profile with competition bests, next competition, and training PRs"> |
 
-**Records in Reach is under construction.** All four boards in this screenshot contain anonymous demo placeholders.
+## Records In Reach review
+
+The presentation layer is now built. Athlete profiles show only verified **Holds Record** and athlete-facing **In Reach** results. The coach board additionally surfaces one selected **Near** result per lift and separates cautious **Needs Data / Review** states from athlete-facing opportunities.
+
+| Full coach board · desktop | Full coach board · mobile |
+| :---: | :---: |
+| <img src="assets/records-in-reach-team-desktop.png" width="680" alt="Desktop Records In Reach coach board with In Reach, verified holder, selected Near, and review states"> | <img src="assets/records-in-reach-team-mobile.png" width="300" alt="Mobile Records In Reach coach board showing the complete responsive team presentation"> |
+
+### Athlete-facing states
+
+| Multiple In Reach results | Verified holder | No current opportunity |
+| :---: | :---: | :---: |
+| <img src="assets/records-in-reach-athlete-multiple.png" width="280" alt="Athlete profile with two In Reach opportunities"> | <img src="assets/records-in-reach-athlete-holder.png" width="280" alt="Athlete profile with verified Holds Record results"> | <img src="assets/records-in-reach-athlete-empty.png" width="280" alt="Athlete profile with a calm no-current-opportunities state"> |
+
+### Coach-only review detail
+
+<img src="assets/records-in-reach-coach-review.png" width="430" alt="Coach-only Records In Reach detail showing selected Near and cautious Needs Data and Review states">
+
+The screenshots use production-shaped review fixtures to validate hierarchy, language, responsive behavior, and category separation. They are not a live athlete-data feed. The review site does not connect to Airtable or an API, and authentication is not enabled.
 
 ## System architecture
 
@@ -98,7 +116,7 @@ The sign-in screen establishes the intended entry experience. Authentication is 
 | PWA shell, design, and navigation | **Built** — responsive mobile and desktop surfaces, app manifest, and offline shell foundation. |
 | Synthetic preview | **Built** — static demo content, with no live athlete reads or writes. |
 | Protected live-data and authentication layer | **Staged / next phase** — the preview is not connected to live data or authentication. |
-| Records in Reach | **Under construction** — board concept visible; live opportunity calculations are not implemented in this preview. |
+| Records In Reach presentation | **Built for review** — athlete and coach category presentations are fixture-backed; live Airtable/API integration is not connected. |
 | External launchers and PR Bell submission | **Placeholder / concept** — reviewed destinations and authorized persistence remain future work. |
 
-This showcase is a design and architecture review, with no application deployment or live service access.
+This showcase is a design and architecture review. It is not the production Paramount Portal and has no live Airtable/API or authenticated application access.

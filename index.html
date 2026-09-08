@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080809">
+    <meta name="description" content="Paramount Portal design review: mobile-first foundation and Records In Reach presentation.">
+    <title>Paramount Portal · Design Review</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Paramount Portal design review home"><strong>PARAMOUNT</strong><span>PORTAL</span></a>
+      <span class="review-pill">Design review</span>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <p class="eyebrow">One team · one front door</p>
+        <h1>The athlete experience,<br><em>made tangible.</em></h1>
+        <p class="hero-copy">A focused review of the mobile-first Paramount Portal foundation and the built Records In Reach presentation.</p>
+        <div class="boundary"><strong>Review environment</strong><span>This site is not the production Portal. Live Airtable/API integration and authentication are not connected.</span></div>
+      </section>
+
+      <section class="section-shell section-block" aria-labelledby="foundation-title">
+        <div class="section-heading"><div><p class="eyebrow">Foundation</p><h2 id="foundation-title">A clear front door for the club.</h2></div><span class="status">Built</span></div>
+        <p class="section-intro">The responsive shell connects Home, The Platform, Team, and Profile into one coherent athlete experience. Existing foundation screens remain part of this review.</p>
+        <div class="foundation-grid">
+          <figure><img src="assets/home-mobile.png" alt="Mobile Paramount Portal Home screen" loading="lazy"><figcaption>Home · mobile</figcaption></figure>
+          <figure><img src="assets/platform-mobile.png" alt="Mobile Platform overview" loading="lazy"><figcaption>The Platform · mobile</figcaption></figure>
+          <figure><img src="assets/team-mobile.png" alt="Original mobile Team overview" loading="lazy"><figcaption>Team foundation · mobile</figcaption></figure>
+          <figure><img src="assets/profile-mobile.png" alt="Original mobile athlete Profile" loading="lazy"><figcaption>Profile foundation · mobile</figcaption></figure>
+          <figure><img src="assets/sign-in-mobile.png" alt="Mobile sign-in design with demo preview boundary" loading="lazy"><figcaption>Sign-in boundary · mobile</figcaption></figure>
+        </div>
+      </section>
+
+      <section class="reach-section" aria-labelledby="reach-title">
+        <div class="section-shell">
+          <div class="section-heading section-heading--light"><div><p class="eyebrow">Records In Reach</p><h2 id="reach-title">Built to show what matters—and who needs to see it.</h2></div><span class="status status--light">Presentation built</span></div>
+          <div class="role-grid">
+            <article><span>ATHLETE</span><h3>Simple, verified, useful.</h3><p>Athletes see only verified Holds Record and athlete-facing In Reach results.</p></article>
+            <article><span>COACH</span><h3>More context, kept private.</h3><p>Coaches additionally see selected Near and cautious Needs Data / Review states.</p></article>
+          </div>
+
+          <figure class="desktop-feature"><img src="assets/records-in-reach-team-desktop.png" alt="Desktop Records In Reach coach board with In Reach, verified Holds Record, selected Near, and review states"><figcaption>Complete coach board · desktop</figcaption></figure>
+
+          <div class="mobile-review-grid">
+            <figure class="mobile-review-grid__tall"><img src="assets/records-in-reach-team-mobile.png" alt="Complete Records In Reach coach board on mobile" loading="lazy"><figcaption>Complete coach board · mobile</figcaption></figure>
+            <div class="mobile-review-grid__stack">
+              <figure><img src="assets/records-in-reach-coach-review.png" alt="Coach-only selected Near and cautious review detail" loading="lazy"><figcaption>Selected Near + cautious review · coach only</figcaption></figure>
+              <div class="fixture-note"><strong>Final reviewed Near fixtures</strong><ul><li>Minnie Copp · Masters M35 · 77 kg · Snatch 76 → 86 kg</li><li>Andy Nam · Masters M35 · 75 kg · Total 173 → 197 kg</li><li>Judy Zhou · Senior/Open · 53 kg · Snatch 60 → 67 kg</li></ul></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell section-block" aria-labelledby="athlete-states-title">
+        <div class="section-heading"><div><p class="eyebrow">Athlete experience</p><h2 id="athlete-states-title">Three states. One calm language.</h2></div></div>
+        <p class="section-intro">The athlete view never exposes coach-only Near or unresolved review detail.</p>
+        <div class="athlete-grid">
+          <figure><img src="assets/records-in-reach-athlete-multiple.png" alt="Athlete profile showing multiple In Reach opportunities" loading="lazy"><figcaption><strong>In Reach</strong><span>Multiple verified opportunities</span></figcaption></figure>
+          <figure><img src="assets/records-in-reach-athlete-holder.png" alt="Athlete profile showing verified record-holder evidence" loading="lazy"><figcaption><strong>Holds Record</strong><span>Verified holder authority</span></figcaption></figure>
+          <figure><img src="assets/records-in-reach-athlete-empty.png" alt="Athlete profile showing no current record opportunity" loading="lazy"><figcaption><strong>Quiet state</strong><span>No unsupported promise</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section class="section-shell review-status" aria-labelledby="status-title">
+        <p class="eyebrow">Review status</p><h2 id="status-title">What is—and is not—connected.</h2>
+        <div class="status-grid">
+          <article><strong>Built</strong><p>Responsive Portal foundation and Records In Reach presentation.</p></article>
+          <article><strong>Fixture-backed</strong><p>Displayed names and values are controlled review/demo fixtures.</p></article>
+          <article><strong>Not connected</strong><p>Live Airtable/API data, authentication, writes, and production access.</p></article>
+        </div>
+      </section>
+    </main>
+
+    <footer><strong>PARAMOUNT PORTAL</strong><span>Design review · not the production application</span></footer>
+  </body>
+</html>
